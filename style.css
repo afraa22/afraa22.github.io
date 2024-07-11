@@ -1,0 +1,122 @@
+/* CSS RESET */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h2, h3 {
+    color: #755a26ee;
+}
+
+footer {
+    background-color:rgb(245, 203, 141);
+    padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gambar-artikel {
+    width: 75%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gambar-dokum {
+    width: 200px;
+}
+
+main {
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.21);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    background-color: rgba(235, 210, 143, 0.945);
+    text-align: center;
+    padding: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3 ease;
+}
+
+nav {
+    background-color: rgba(194, 168, 97, 0.884);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: inline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+#content {
+    flex-grow: 5;
+}
+
+aside {
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.21);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+aside header {
+    text-align: center;
+}
+
+aside table {
+    border-collapse: collapse;
+}
+
+aside table th,
+aside table td {
+    border: 1px solid black;
+}
+
+nav a:hover {
+    font-weight: bold;
+    font-size: 100%;
+    color: rgb(245, 222, 123);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    main {
+        flex-wrap: wrap;
+    }
+    #content, aside {
+        width: 100%;
+    }
+}
